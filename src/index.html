@@ -1,17 +1,42 @@
-nnpmn<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HOMEWORK</title>
-    <link rel="stylesheet" href="./css/styles.css" />
+     <link rel="stylesheet" href="./css/styles.css"/>
   </head>
   <body>
-  
-  <a href="./1-timer.html" class="link">Timer</a>
-  <a href="./2-snackbar.html" class="link">Snackbar</a>
+    <form class="search-form js-search-form">
+      <div class="form-group">
+        <label for="searchQuery"></label>
+        <input
+          type="text"
+          name="query"
+          class="form-control"
+          id="searchQuery"
+          placeholder="Search images..."
+          autocomplete="off"
+        />
+      </div>
+      <button type="submit" class="submit-btn">Search</button>
+    </form>
 
-  <h1 class="title">HOMEWORK 10</h1>
+    <span class="waiting-text js-waiting-text is-hidden" aria-hidden="true"
+      >Loading images, please wait...</span
+    >
+
+    <div class="gallery-container">
+      <ul class="images js-images-container"></ul>
+    </div>
+
+    <!-- <form class="formForInput">
+      <input class="inputOfWords" name="animal" />
+      <button class="buttonForInput">Search</button>
+    </form>
+    <div class="areaForLoader"></div>
+    <ul class="userList gallery"></ul> -->
+  <script src="./main.js" type = "module" defer></script>
  
   </body>
 </html> 
